@@ -1,0 +1,16 @@
+/* imports daS fonts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: titiliumweb-black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+/* mobile first */
+
+
+
