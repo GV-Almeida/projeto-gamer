@@ -10,7 +10,67 @@
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
 
+body{
+    background-color: #1b1426;
+    color: white;
+}
+
+/* Classes genéricas */
+.layout-grid{
+    border: 1px solid salmon;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
 /* mobile first */
 
+/* HEADER */
+
+header{
+    height: 60px;
+    background-color: #1b1426;
+}
+
+/* header top */
+
+header .header-top{
+    display: none;
+}
+
+/* Header bottom */
+
+/* justify content + align items */
+.alinhamento-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-bottom{
+    height: 100%;
+}
+
+header .header-bottom img.logo{
+    width: 86px;
+}
+
+header .header-bottom nav{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    background-image: linear-gradient(to right bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+    border: 1px solid white;
+}
+
+header .header-bottom .menu-usuarios{
+    display: none;
+}
 
 
