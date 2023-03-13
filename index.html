@@ -27,20 +27,12 @@
                 </div>
 
             </div>
-
-            <div class="midias-sociais">
-                <a href="">
-                    <img src="./assets/icons/facebook.png" alt="icone link do Facebook da empresa">
-                    <img src="./assets/icons/linkedin.png" alt="icone link do Linkedin da empresa">
-                    <img src="./assets/icons/instagram.png" alt="icone link do Instagram da empresa">
-                </a>
-            </div>
         </div>
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
 
                 <!-- MENU hamburguer -->
-                <img src="./assets/icons/menu-hamburguer.png" class="menu-hamburguer"
+                <img onclick="mostrarMenu()" src="./assets/icons/menu-hamburguer.png" class="menu-hamburguer"
                     alt="ícone para abrir e fechar o menu mobile">
                 <img class="logo" src="./assets/images/logotipo-gamer.png"
                     alt="Logotipo da empresa, com um controle ao centro">
@@ -52,16 +44,33 @@
 
                     <!-- visível apenas no mobile -->
 
-                    <div class="phone">
+
+                    <a class="phone">
                         <img src="./assets/icons/icone_telefone.png" alt="icone de telefone">
                         <span>(11) 0900-1010</span>
-                    </div>
-                    <div class="email">
+                    </a>
+                    <a class="email">
                         <img src="./assets/icons/icone_email.png" alt="icone de e-mail">
                         <span>contato@gamer.com.br</span>
+                    </a>
+
+                    <div class="midias-sociais">
+                        <a href="">
+                            <img src="./assets/icons/facebook.png" alt="icone link do Facebook da empresa">
+                        </a>
+                        
+                        <a href="">
+                            <img src="./assets/icons/linkedin.png" alt="icone link do Linkedin da empresa">
+                        </a>
+
+                        <a href="">
+                            <img src="./assets/icons/instagram.png" alt="icone link do Instagram da empresa">
+                        </a>
                     </div>
 
                 </nav>
+
+
 
                 <!-- menu 3 pontinhos -->
                 <img src="./assets/icons/menu-pontinhos.png"
@@ -83,6 +92,12 @@
             </div>
         </div>
     </header>
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+    </script>
 
 </body>
 
