@@ -36,7 +36,7 @@
                     alt="ícone para abrir e fechar o menu mobile">
                 <img class="logo" src="./assets/images/logotipo-gamer.png"
                     alt="Logotipo da empresa, com um controle ao centro">
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <a href="">ínicio</a>
                     <a href="">Jogadores</a>
                     <a href="">Equipes</a>
@@ -73,10 +73,10 @@
 
 
                 <!-- menu 3 pontinhos -->
-                <img src="./assets/icons/menu-pontinhos.png"
+                <img onclick="mostrarPerfil()" src="./assets/icons/menu-pontinhos.png"
                     alt="ícone 3 pontinhos parar abrir e fechar o perfil usuário">
 
-                <div class="menu-usuarios">
+                <div class="menu-usuarios" id="perfil">
 
                     <a href="">
                         <img src="./assets/icons/link-perfil.png" alt="ícone de perfil">
@@ -93,11 +93,26 @@
         </div>
     </header>
 
+    <main>
+
+        <section class="banner">
+          <h1> Liga Gamers</h1>
+          <a href="" class="botao-sobre">Sobre</a>  
+        </section>
+
+    </main>
+
+    <footer>Todos os direitos reserva</footer>
+
     <script>
         function mostrarMenu() {
-            document.getElementById("menu").classList.toggle("mostrar-menu");
+            document.getElementById("menu").classList.toggle("mostrar-menu");}
+        
+        function mostrarPerfil() {
+            document.getElementById("perfil").classList.toggle("menu-perfil");
         }
-    </script>
+        </script>
+
 
 </body>
 
