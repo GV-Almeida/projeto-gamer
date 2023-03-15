@@ -90,7 +90,7 @@ header .header-bottom nav {
     flex-direction: column;
     justify-content: space-between;
 
-    background-color: white;
+    /* background-color: white; */
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     /* border: 1px solid white; */
     backdrop-filter: blur(45px);
@@ -128,24 +128,19 @@ header .header-bottom nav > a {
 /* menu lateral direito - ícones */
 
 header .header-bottom .menu-usuarios {
-    /* display: none;    */
-    /* border: 1px solid orange; */
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column  ;
-    align-items: center;
-    width: 70px;
-    gap: 30px;
-    margin-top: 214px;
-    text-align: center;
-    right: -70px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    background-image: linear-gradient( to right bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: 170px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
     transition: right 0.4s;
 }
 
@@ -163,12 +158,135 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    padding: 40% ;
+    padding: 40% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center     ;
 
 }
 
 .banner h1{
-    font-family: titiliumweb-bold ;
+    font-family: titiliumweb-black ;
     font-size: 40px;
     text-shadow: 0 0 7px #FD4255;
+}
+
+.banner .botao-sobre{
+    width: 171px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1b1426;
+    text-decoration: none;
+    font-family: titiliumweb-bold;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+/* SECTION JOGOS */
+
+.jogos{
+    width: 100%;
+    height: 590px;
+    background-color: #1b1426;
+}
+
+.jogos-centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SECTION PROGAMER */
+
+.progamer{
+    height: 1535px;
+    background-color: #F9AA01;
+}
+
+.entre-time{
+    text-align: center;
+    font-size: 18px;
+    font-family: titiliumweb-black;
+    letter-spacing: 2px;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color:#1b1426;  
+}
+
+.jogos-diferentes{
+    border: 2px solid black;
+    width:231px ;
+    height: 300px;
+    border-radius: 8px;
+    /* background-color: white ; */
+    background-image: linear-gradient(to right bottom ,rgba(122,49,236,0.2) , rgba(47,7,109,0.8));
+    backdrop-filter: blur(15px);
+}
+
+#linha{
+    border-top: 2px solid black;
+    width: 200px;
+    margin-left: 65px;
+}
+
+/* TABLETS >= 768px */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* DESKTOP >= 1200PX */
+
+@media screen and (min-width: 1200px) {
+    .layout-grid{
+        width:100%;
+        max-width: 1200px;
+
+        border: 3px dotted yellowgreen;
+    }
+
+    /* HEADER */
+    header{
+        position: static;
+        height: 140px;
+    }
+
+    header .menu-hamburguer,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais{
+        display: none;
+    }
+
+    header .header-bottom img.logo{
+        width: 200px;
+    }
+
+    header .header-bottom nav{
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+        background-color: red;
+    }
+
+    header .header-bottom .menu-usuarios{
+        position: static;
+        flex-direction: row;
+        width: 180px;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    /* MAIN */
+    main{
+        margin-top: 0;
+    }
 }
