@@ -20,6 +20,11 @@
     src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+@font-face {
+    font-family: quicksand ;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
 body {
     background-color: #1b1426;
     color: white;
@@ -111,6 +116,10 @@ header .header-bottom nav>a {
 
 }
 
+header .header-bottom nav>a:hover {
+    background-color: #F9AA01;
+}
+
 header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
@@ -176,7 +185,8 @@ main {
     width: 171px;
     height: 40px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: #F9AA01;
     color: #1b1426;
@@ -233,6 +243,43 @@ main {
     border-top: 2px solid black;
     width: 200px;
     margin-left: 65px;
+}
+
+/*Footer*/
+
+footer{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    box-shadow: inset 0 30px 60px rgba(0,0,0,1);
+    background-image: url(../assets/images/backgroung_footer.png);
+    background-position: top;
+    background-size: contain;
+}
+
+footer #sobre{
+    width: 100%;
+    height: 304px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: salmon; */
+}
+footer #sobre > img {width: 110px;}
+
+footer #sobre p{
+    font-family: quicksand ;
+    font-weight: 400;
+    font-size: 14px ;
+}
+
+footer #midias-sociais-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 /* TABLETS >= 768px */
@@ -333,15 +380,36 @@ main {
         margin-top: 0;
     }
 
-    .banner{
+    .banner {
         height: 722px;
         /* alterar a imagem de fundo */
         background-image: url(../assets/images/banner-desktop.png);
         background-size: cover;
         background-position: top;
+        justify-content: space-between;
+
     }
 
-    .banner h1{
+    .banner h1 {
         font-size: 80px;
     }
+
+
+    /* sessao de jogos */
+    main .jogos {
+        height: 500px;
+    }
+
+    main .jogos .jogos-centro {
+        flex-direction: row;
+
+    }
+
+    main .jogos .jogos-centro img {
+        width: 555px;
+    }
+
+    /* FOOTER */
+    
+
 }
