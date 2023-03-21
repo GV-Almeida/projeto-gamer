@@ -1,4 +1,3 @@
-/* imports daS fonts */
 * {
     margin: 0;
     padding: 0;
@@ -159,105 +158,35 @@ header .header-bottom .menu-usuarios {
 }
 
 /* MAIN */
-main {
-    margin-top: 60px;
-}
 
-/* banner */
-.banner {
-    height: 606px;
+main .banner-login{
     width: 100%;
-    background-color: rebeccapurple;
-    background-image: url(../assets/images/fundo-banner-mobile.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 40% 0;
+    height: 687px;
+}
+
+main .centralizar{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
+    justify-content: center;
 }
 
-.banner h1 {
-    font-family: titiliumweb-black;
-    font-size: 40px;
-    text-shadow: 0 0 7px #FD4255;
-}
-
-.banner .botao-sobre {
-    width: 171px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F9AA01;
-    color: #1b1426;
-    text-decoration: none;
-    font-family: titiliumweb-bold;
-    font-size: 24px;
-    border-radius: 8px;
-}
-
-/* SECTION JOGOS */
-
-.jogos {
-    width: 100%;
-    height: 590px;
-    background-color: #1b1426;
-}
-
-.jogos-centro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* SECTION PROGAMER */
-
-.progamer {
-    height: 1535px;
-    background-color: #F9AA01;
-}
-
-.entre-time {
-    text-align: center;
-    font-size: 18px;
-    font-family: titiliumweb-black;
-    letter-spacing: 2px;
-    padding-top: 60px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #1b1426;
-}
-
-.jogos-diferentes {
-    border: 2px solid transparent;
-    width: 231px;
-    height: 300px;
-    border-radius: 8px;
-    /* background-color: white ; */
-    background: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.8)) padding-box,
-     linear-gradient( to right bottom, rgba(255, 255, 255,1), rgba(27, 20, 38,0)) border-box;
-
-    backdrop-filter: blur(15px);
-    background-color: transparent;
-    /* border-image-source: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(27, 20, 38, 0.8) ); */
-    border-image-slice: 1;
-    
+main .box-login{
+    width: 335px;
+    height: 462px;
+    border: 2px solid yellow;
     
 }
 
-#linha {
-    border-top: 2px solid black;
-    width: 200px;
-    margin-left: 65px;
-}
 
-/*Footer*/
+
+
+
+
+
+
+
+
+
 
 footer {
     padding-top: 60px;
@@ -392,136 +321,4 @@ footer #newsletter button {
 
 footer .footer-bottom{
     text-align: center;
-}
-
-/* TABLETS >= 768px */
-
-@media screen and (min-width: 768px) {}
-
-/* DESKTOP >= 1200PX */
-
-@media screen and (min-width: 1200px) {
-    .layout-grid {
-        width: 100%;
-        max-width: 1200px;
-
-        /* border: 3px dotted yellowgreen; */
-    }
-
-    /* HEADER */
-    header {
-        position: static;
-        height: 140px;
-    }
-
-    header .header-top {
-        /* block é o valor default da maioria dos elementos */
-        /* display em line a caixa fica do tamanho do conteúdo */
-        display: block;
-        border-bottom: 2px solid #F9AA01;
-        height: 50px;
-    }
-
-    header .header-top .contatos {
-        width: 415px;
-        display: flex;
-        justify-content: space-between;
-
-        font-family: inter;
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    header .header-top .contatos>div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        /* border: 1px solid yellowgreen; */
-    }
-
-    header .header-top .midias-sociais {
-        width: 120px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .menu-hamburguer,
-    header .menu-pontinhos,
-    header .header-bottom nav .phone,
-    header .header-bottom nav .email,
-    header .header-bottom nav .midias-sociais {
-        display: none;
-    }
-
-    header .header-bottom {
-        height: 90px;
-    }
-
-    header .header-bottom img.logo {
-        width: 200px;
-    }
-
-    header .header-bottom nav {
-        position: static;
-        width: 440px;
-        height: 50px;
-        padding: 0;
-        flex-direction: row;
-        align-items: center;
-        /* background-color: red; */
-    }
-
-    header .header-bottom nav>a {
-        border: none;
-        font-size: 14px;
-    }
-
-    header .header-bottom .menu-usuarios {
-        position: static;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 120px;
-        height: auto;
-        background-color: transparent;
-    }
-
-    /* MAIN */
-    main {
-        margin-top: 0;
-    }
-
-    .banner {
-        height: 722px;
-        /* alterar a imagem de fundo */
-        background-image: url(../assets/images/banner-desktop.png);
-        background-size: cover;
-        background-position: top;
-        justify-content: space-between;
-
-    }
-
-    .banner h1 {
-        font-size: 80px;
-    }
-
-
-    /* sessao de jogos */
-    main .jogos {
-        height: 500px;
-    }
-
-    main .jogos .jogos-centro {
-        flex-direction: row;
-
-    }
-
-    main .jogos .jogos-centro img {
-        width: 555px;
-    }
-
-    /* FOOTER */
-
-
 }
