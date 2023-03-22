@@ -159,35 +159,22 @@ header .header-bottom .menu-usuarios {
 
 /* MAIN */
 
-main .banner-login{
-    width: 100%;
+main{
     height: 687px;
+    background-image: url(../assets/images/Banner_Login.png);
+    width:100vw;
 }
 
-main .centralizar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-main .box-login{
+main .login-cadastro{
     width: 335px;
-    height: 462px;
-    border: 2px solid yellow;
-    
+    height:462px;
+    border: #F9AA01 1px solid;
+    margin-top: 61px;    
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/* FOOTER */
 footer {
     padding-top: 60px;
     padding-bottom: 30px;
