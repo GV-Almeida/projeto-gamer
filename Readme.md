@@ -1,3 +1,3 @@
 # Projeto gamer
 
-disponivel em 
+disponivel em https://gv-almeida.github.io/projeto-gamer/
